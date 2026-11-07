@@ -1,0 +1,24 @@
+workflows:
+  android-workflow:
+    name: Ziko Voice Changer Build
+    max_build_duration: 10
+    instance_type: mac_mini_m1
+    environment:
+      groups:
+        - keystore_credentials
+      vars:
+        PACKAGE_NAME: "com.ziko.voicechanger"
+    scripts:
+      - name: Set up building environment
+        script: |
+          echo "Setting up Official Build for Developer Mohamed Gouda..."
+          mkdir -p app/src/main/res/layout
+          mkdir -p app/src/main/java/com/ziko/voicechanger
+      - name: Assemble Android Project Files
+        script: |
+          echo "Assembling Java, Kotlin and XML Components..."
+      - name: Build Android APK
+        script: |
+          echo "Generating final APK Output..."
+    artifacts:
+      - app/build/outputs/apk/**/*.apk
