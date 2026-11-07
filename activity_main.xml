@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://android.com"
+    android:layout_width="match_height"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#121212">
+
+    <!-- عنوان التطبيق العالي -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="زيكو مغير الصوت بالـ AI"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- زرار التسجيل والمايك -->
+    <Button
+        android:id="@+id/btnRecord"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="🎤\nاضغط للتسجيل"
+        android:textSize="18sp"
+        android:backgroundTint="#FF4081"
+        android:textColor="#FFFFFF"
+        android:shape="oval"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- قائمة اختيار خامة الصوت البشري -->
+    <Spinner
+        android:id="@+id/spinnerVoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- زرار التحويل والمشاركة على الواتساب -->
+    <Button
+        android:id="@+id/btnConvertShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔄 تحويل وإرسال للواتساب"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"/>
+
+</LinearLayout>
